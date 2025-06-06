@@ -47,13 +47,7 @@ function TodoApp() {
       <h1>Todo List</h1>
       <TodoInput addTodo={addTodo} />
       {todos.map(todo => (
-        <TodoItem
-          key={todo.id}
-          todo={todo}
-          deleteTodo={deleteTodo}
-          toggleComplete={toggleComplete}
-          editTodo={editTodo}
-        />
+        <TodoItem key={todo.id} todo={todo} deleteTodo={deleteTodo} toggleComplete={toggleComplete} editTodo={editTodo}/>
       ))}
     </div>
   );
